@@ -9,7 +9,7 @@ import time
 
 msgEnText = 'Enter the text: '
 
-# Преобрахование введенного дробного числа к денежному формату
+# Преобразование введенного дробного числа к денежному формату
 def Ex1():
     summ = input('Enter sum: ').replace(',', '.').split('.')
     if int(summ[0]) < 0:
