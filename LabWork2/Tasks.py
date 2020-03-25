@@ -44,7 +44,7 @@ def ex3():
             raise Exception('ERROR!!! Folder not found!')
         with open('./test_3.txt', 'r', encoding='utf-8') as names:
             for file in os.listdir(path):
-                os.replace(path + '\\' + file, path + '\\' + names.readline().rstrip() + '.mp3')
+                os.replace(path + '/' + file, path + '/' + names.readline().rstrip() + '.mp3')
         os.startfile(path + '/Periphery - MAKE TOTAL DESTROY.mp3')     #GOT DJENT!!!
     except FileNotFoundError:
         print('ERROR! File not found!')
