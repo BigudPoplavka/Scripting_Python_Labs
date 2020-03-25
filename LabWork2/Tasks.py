@@ -78,7 +78,7 @@ def ex4():
 
     try:
         text = get_file(input('Enter file-name: '))
-        print([output.format(line, pos, substr) for line, pos, subsrt in get_substrings(text, expr)])
+        print([output.format(line, pos, substr) for line, pos, substr in get_substrings(text, expr)])
     except FileNotFoundError:
         print('ERROR! File not found!')
 
