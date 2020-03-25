@@ -86,7 +86,7 @@ def ex4():
 def ex5():
     expr = r'[A-Z][A-Za-z]+([0-9]{2}$|[0-9]{4}$)'
     text = input('Enter text: ')
-    print([str(substr) for line, pos, subsrt in get_substrings(text, expr)])
+    print([str(substr) for line, pos, substr in get_substrings(text, expr)])
 
 
 def ex6():
